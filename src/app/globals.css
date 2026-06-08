@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-outfit), Arial, sans-serif;
+  --font-serif: var(--font-playfair), Georgia, serif;
+  --color-gold-50: #fbf7ee;
+  --color-gold-100: #f6ebd3;
+  --color-gold-200: #ebd3a7;
+  --color-gold-300: #d6a24f;
+  --color-gold-400: #b98335;
+  --color-gold-500: #9b6a24;
+  --color-gold-600: #7e5218;
+  --color-gold-700: #623c0f;
+  --color-gold-800: #462708;
+  --color-gold-900: #2b1502;
+  --color-gold-950: #0a0600;
+  --color-luxury-bg: #0d0b09;
+  --color-luxury-card: rgba(22, 19, 16, 0.75);
+}
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #0d0b09;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-outfit), Arial, sans-serif;
+  background-color: #0d0b09;
+  color: #f6ebd3;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: #0d0b09; }
+::-webkit-scrollbar-thumb { background: #2b1502; border: 2px solid #0d0b09; border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: #d6a24f; }
+
+/* Core Animations */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes glow {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.6; }
+}
+
+/* Social Button Animations */
+@keyframes socialPulse {
+  0%, 100% {
+    box-shadow: 0 0 0 3px rgba(214,162,79,0.08), 0 0 12px rgba(214,162,79,0.15);
+  }
+  50% {
+    box-shadow: 0 0 0 6px rgba(214,162,79,0.15), 0 0 28px rgba(214,162,79,0.35);
+  }
+}
+
+@keyframes socialGlow {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(1.2); }
+}
+
+.animate-float { animation: float 6s ease-in-out infinite; }
+.animate-glow { animation: glow 8s ease-in-out infinite; }

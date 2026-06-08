@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "client_name": "sabarni mukherjee",
+    "email": "mukherjeesabarni0@gmail.com",
+    "phone": "8391058620",
+    "service": "Pre-wedding",
+    "event_date": "2006-02-20",
+    "venue": "burdwan",
+    "package_price": 1000000,
+    "status": "pending",
+    "notes": "",
+    "source": "admin",
+    "created_at": "2026-06-08T18:20:02.075Z"
+  }
+]

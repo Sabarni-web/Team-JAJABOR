@@ -1,0 +1,20 @@
+[
+  {
+    "id": 2,
+    "name": "Sabarni Mukherjee",
+    "email": "mukherjeesabarni0@gmail.com",
+    "phone": "+918391059258",
+    "specialization": "Wedding",
+    "photo_url": "/uploads/team-1780933416625-3nypf4gzvig.png",
+    "created_at": "2026-06-08T15:43:36.716Z"
+  },
+  {
+    "id": 1,
+    "name": "Sabarni Mukherjee",
+    "email": "mukherjeesabarni60@gmail.com",
+    "phone": "8391059250",
+    "specialization": "Wedding",
+    "photo_url": "/uploads/team-1780824659778-auyb0qwmvhm.jpg",
+    "created_at": "2026-06-07T09:30:59.814Z"
+  }
+]
