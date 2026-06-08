@@ -180,8 +180,11 @@ export default function AdminPage() {
                   <span className="icon">{item.icon}</span>
                   {item.label}
                   {item.badge && (
-                    <span className={`badge ${item.badgeGold ? "gold" : ""}`}>{item.badge}</span>
-                  )}
+  <span className={`badge ${"badgeGold" in item && item.badgeGold ? "gold" : ""}`}>
+    {item.badge}
+  </span>
+)}
+
                 </button>
               ))}
             </div>
